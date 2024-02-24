@@ -13,7 +13,7 @@ This source code is not downloaded directly from TikTok but uses a third party.
    ```
 2. Clone or download this repository
    ```bash
-   git clone https://github.com/akasakaid/TiktokDownloader.git
+   git clone https://github.com/caprosoft/TiktokDownloader.git
    ```
 3. Goto TiktokDownloader folder<br/>
    ```powershell
@@ -73,13 +73,3 @@ python3 main.py
 Save the session using keyboard shortcut **ctrl + a + d**
 
 Done
-# Follow me
-* https://facebook.com/fawwazthoerif
-* https://instagram.com/fawatashi <br />
-  *You can contact me with social media in above*
-# Support me
-
-* (Indonesia) https://trakteer.id/fawwazthoerif
-* (Global/International) https://sociabuzz.com/fawwazthoerif/tribe
-* Bitcoin ```1HjMdpmiM8bUs2CtfjpXcjZjBBxNgBvhp4```
-* Tron / USDT (Tron20) ```TZANkbi8z22cEpkpWfJ1F6H84r9DA19Es1```
