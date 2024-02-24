@@ -2,6 +2,7 @@ from load import *
 from pyrogram import Client
 from pyrogram import errors
 
+'''
 def delete_message(id,messageId):
 	bot = Client(name="bot",api_id=ApiId,api_hash=ApiHash,bot_token=TokenBot)
 	bot.start()
@@ -9,7 +10,7 @@ def delete_message(id,messageId):
 		bot.delete_messages(chat_id=id,message_ids=messageId)
 		print("[+] message has been delete !")
 		bot.stop()
-		
+
 
 	except errors.UserIsBlocked:
 		print("[x] user blocked you !")
@@ -18,7 +19,8 @@ def delete_message(id,messageId):
 	except errors.PeerIdInvalid:
 		print("[x] user maybe died !")
 		bot.stop()
-
+'''
+        
 def send_message(id,message,replyMessage=False):
 	bot = Client(name="bot",api_id=ApiId,api_hash=ApiHash,bot_token=TokenBot)
 	bot.start()

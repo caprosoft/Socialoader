@@ -2,7 +2,7 @@ import json
 from requests import *
 from tiktok_downloader import downloader
 from datetime import datetime
-from telegram import send_message,send_video,delete_message
+from telegram import send_message,send_video#,delete_message
 
 def get_time(tt):
 	tt = datetime.fromtimestamp(tt)
@@ -35,10 +35,12 @@ def Core(data):
 		if 'text' in data['message'].keys():
 			text = data['message']['text']
 		
+		'''
 		if chat_type != "private":
 			send_message(user_id, "Bot only work in private chat not group chat !", message_id)
 			return
-		
+		'''
+
 		rl_time = get_time(message_date)
 		print(f'[+] time : {rl_time}')
 		print(f'[+] from : {user_id} | {first_name}')
@@ -76,35 +78,35 @@ Donation :
 			res = dl.tiktapio(text)
 			if res:
 				print("[+] success download with tiktapio !")
-				delete_message(user_id,message_id)
+				#delete_message(user_id,message_id)
 				send_video(user_id,video_name,msg)
 				return
 			
 			res = dl.tiktapiocom(text)
 			if res:
 				print("[+] success download with tiktapiocom !")
-				delete_message(user_id,message_id)
+				#delete_message(user_id,message_id)
 				send_video(user_id,video_name,msg)
 				return
 			
 			res = dl.tikmatecc(text)
 			if res:
 				print("[+] success download with tikmatecc !")
-				delete_message(user_id,message_id)
+				#delete_message(user_id,message_id)
 				send_video(user_id,video_name,msg)
 				return
 			
 			res = dl.snaptikpro(text)
 			if res:
 				print("[+] success download with snaptikpro !")
-				delete_message(user_id,message_id)
+				#delete_message(user_id,message_id)
 				send_video(user_id,video_name,msg)
 				return
 			
 			res = dl.musicaldown(text)
 			if res:
 				print("[+] success download with musicaldown !")
-				delete_message(user_id,message_id)
+				#delete_message(user_id,message_id)
 				send_video(user_id,video_name,msg)
 				return
 			
