@@ -49,31 +49,14 @@ def Core(data):
 			msg = """Welcome to Tiktok Video Downloader Bot !
 
 How to use the bot :
-🇺🇸 : just send tiktok video link
-
-Cara menggunakan bot :
-🇮🇩 : cukup kirimkan tautan/url video tiktok
-
-check video : https://vt.tiktok.com/ZSNLApQoG/"""
+just send tiktok video link or add the bot to a group"""
 			send_message(user_id,msg,message_id)
 			return
 			
 		if "https://" in text and "tiktok.com" in text and \
 				len(text.split()) == 1 and text.find("http") == 0:
 			original_link = (text.split("?")[0] if text.find("?") >= 0 else text)
-			msg = f"""Video Downloaded from @TiktokVideoDownloaderIDBot!
-
-🇺🇸 : if the video does not play, resend the link !
-🇮🇩 : jika video tidak bisa diputar, kirim ulang url !
-
-original link : {original_link}
-
-Subscribe : https://youtube.com/@fawwazthoerif
-Follow : https://tiktok.com/@fawwaz.thoerif
-
-Donation :
-🇺🇸 : https://sociabuzz.com/fawwazthoerif/tribe
-🇮🇩 : https://trakteer.id/fawwazthoerif/tip"""
+			msg = f"""Original video link : {original_link}"""
 			
 			res = dl.tiktapio(text)
 			if res:
@@ -110,17 +93,8 @@ Donation :
 				send_video(user_id,video_name,msg)
 				return
 			
-			msg = """🇺🇸 : failed to download the video, check the link and try again later !
-🇮🇩 : gagal dalam mengunduh video, cek tautan dan coba lagi nanti !"""
+			msg = """Failed to download the video, check the link and try again later !"""
 			send_message(user_id,msg,message_id)
-			return
-
-		if text.startswith("/donation"):
-			msg = """Support my project by donating as much as you can for server and maintenance costs.
-
-Indonesia : https://trakteer.id/fawwazthoerif/tip
-Global (International) : https://sociabuzz.com/fawwazthoerif/tribe"""
-			send_message(user_id, msg, message_id)
 			return
 		
 	except KeyboardInterrupt as e:
