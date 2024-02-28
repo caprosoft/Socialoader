@@ -1,4 +1,4 @@
-# Tiktok Downloader
+# Socialoader 
 
 Source code for Telegram bot which functions to download TikTok videos without watermark.<br/>
 This source code is not downloaded directly from TikTok but uses a third party.
