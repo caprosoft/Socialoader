@@ -46,7 +46,7 @@ def Core(data):
 		print(f'[+] from : {user_id} | {first_name}')
 		print(f'[+] message : {text}')
 		if text.startswith('/start'):
-			msg = """Welcome to Tiktok Video Downloader Bot !
+			msg = """Welcome to Socialoader Bot !
 
 How to use the bot :
 just send tiktok video link or add the bot to a group"""

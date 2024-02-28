@@ -13,11 +13,11 @@ This source code is not downloaded directly from TikTok but uses a third party.
    ```
 2. Clone or download this repository
    ```bash
-   git clone https://github.com/caprosoft/TiktokDownloader.git
+   git clone https://github.com/caprosoft/Socialoader.git
    ```
-3. Goto TiktokDownloader folder<br/>
+3. Goto Socialoader folder<br/>
    ```powershell
-   cd TiktokDownloader
+   cd Socialoader
    ```
 4. Install required libraries <br />
    ```bash
